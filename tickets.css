@@ -1,0 +1,70 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.tlogo{
+    color:white;
+    margin-right: 95px;
+    margin-left: -350px;
+    padding-right: 30px;
+    font-size: 21px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+#navbarNavAltMarkup{
+    margin-right: 35px;
+}
+
+
+.justify-content-end{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.active{
+    color: white;
+}
+
+.ticket1{
+    width: 199px; 
+    text-align: center; 
+    border-radius: 2px;
+    border-color: blue;
+    margin-top: 25px;
+    margin-left: 365px;
+}
+
+.ticket2{
+    width: 199px; 
+    text-align: center; 
+    border-radius: 2px; 
+    border-color: royalblue;
+    margin-left: 570px;
+    margin-top: -186px;
+}
+
+.ticket3{
+    width: 199px; 
+    text-align: center; 
+    border-radius: 2px; 
+    border-color: orange;
+    margin-left: 775px;
+    margin-top: -186px;
+}
+
+#totalPago{
+   margin-left: 365px; 
+    margin-top: 27px; 
+    padding-top: 10px; 
+    padding-left:20px; 
+    background-color: rgba(170, 224, 244, 0.847); 
+    color: rgb(47, 80, 115); 
+    width: 610px; 
+    height: 50px; 
+    border-radius: 5px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../tickets.css">
+    <!-- JavaScript Bundle with Popper -->
+    
+    <title>formulario</title>
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg bg-" style="background-color: rgb(68, 66, 66) ; height: 70px;">
+      <div class="container-fluid div1">
+        <img src="../imagenes/codoacodo.png" alt="" width="120px">
+        <h1 class="tlogo">Conf Bs As</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <nav class="nav justify-content-end">
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav" style="font-size: 15px ;">
+                      
+                      <a class="nav-link active link-light" aria-current="page" href="conferencia.html">La conferencia</a>
+                      <a class="nav-link link-light" href="./pages/oradores.html">Los oradores</a>
+                      <a class="nav-link link-light" href="./pages/lugar-fecha.html">El Lugar y la fecha</a>
+                      <a class="nav-link link-light" href="./pages/contacto.html">Conviertete en orador</a>
+                      <a class="nav-link link-success" href="#">Comprar tickets</a>
+                      
+                  </div>   
+              </div>
+          </nav>
+      </div>
+  </nav>
+</header>
+<body>
+  
+
+  <div class="card border-blue mb-3 ticket1">
+    <div class="card-body text-dark">
+      <h5 class="card-title">Estudiante</h5>
+      <p class="card-text">Tienen un descuento</p>
+      <p><b>80%</b></p>
+      <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+    </div>
+</div>
+
+<div class="card border-royalblue mb-3 ticket2">
+  <div class="card-body text-dark">
+    <h5 class="card-title">Trainee</h5>
+    <p class="card-text">Tienen un descuento</p>
+    <p><b>50%</b></p>
+    <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+  </div>
+</div>
+
+<div class="card border-orange mb-3 ticket3">
+  <div class="card-body text-dark">
+    <h5 class="card-title">Junior</h5>
+    <p class="card-text">Tienen un descuento</p>
+    <p><b>15%</b></p>
+    <p class="card-text"><small class="text-muted">*presentar documentación</small></p>
+  </div>
+</div>
+
+<p style="text-align: center ; font-size: 12px;">VENTA</p>
+    <h2 style="text-align: center;">VALOR DE TICKET $200</h2>
+
+
+
+
+    <form>
+        <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nombre" aria-label="First name" id="nombre" style="margin-left: 364px; margin-top: 18px; width: 310px;" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name" id="apellido" style="margin-left: 685px; margin-top: -38px; margin-bottom: 20px; width: 290px;" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-sm-10">
+              <input type="email" class="form-control" placeholder="Correo" id=email" style="margin-left: 364px; width: 612px;">
+            </div>
+          </div>
+          
+          <div class="col-md-3 position-relative" style="margin-left: 364px; margin-top: 15px;">
+            <label for="validationCustom04" class="form-label">Cantidad</label>
+            <input type="text" class="form-control" placeholder="Cantidad" id="cantidadTickets" style="width: 310px;" required>
+          </div>
+          <div class="col-sm-3" style="margin-left: 685px; margin-top: -70px; width: 290px;">
+            <label for="validationCustom04" class="form-label">Categoria</label>
+            <select class="form-select" id="categoria"required>
+              <option value="0">Seleccione...</option>
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+            </select>
+          </div>
+
+          <div>
+            <p id="totalPago">
+              Total a pagar $
+            </p>
+          </div>
+          
+          <button type="reset" class="btn btn-primary btn-lg" id="borrar" style="background-color: rgba(147, 205, 80, 0.9) ; width: 310px; margin-top: 30px; margin-left: 364px; font-size: 18px; border-color: rgba(147, 205, 80, 0.9);">Borrar</button>
+          <button type="button" class="btn btn-primary btn-lg" id="resumen" style="background-color: rgba(147, 205, 80, 0.9) ; width: 290px; margin-left: 685px; margin-top: -70px; font-size: 18px; border-color:rgba(147, 205, 80, 0.9);">Resumen</button>
+
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="../tickets.js"></script>
+</body>
+</html>
